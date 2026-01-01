@@ -1,0 +1,80 @@
+:root {
+    /* Professional Palette (Slate & Royal Blue) */
+    --primary-color: #2563eb;
+    /* Royal Blue */
+    --primary-hover: #1d4ed8;
+
+    --bg-primary: #f1f5f9;
+    /* Slate-100 */
+    --bg-secondary: #ffffff;
+    /* White */
+    --bg-tertiary: #f8fafc;
+    /* Slate-50 */
+
+    --text-primary: #0f172a;
+    /* Slate-900 */
+    --text-secondary: #64748b;
+    /* Slate-500 */
+    --text-muted: #94a3b8;
+    /* Slate-400 */
+
+    --border-color: #e2e8f0;
+    /* Slate-200 */
+
+    --msg-sent-bg: #2563eb;
+    /* Primary Color */
+    --msg-sent-text: #ffffff;
+    --msg-received-bg: #ffffff;
+    --msg-received-text: #0f172a;
+
+    --accent-color: #3b82f6;
+    /* Blue-500 */
+
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    /* Deduplicated */
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+
+    /* Legacy mapping helpers */
+    --bg-color: var(--bg-primary);
+    --sidebar-bg: var(--bg-secondary);
+
+    /* Restore missing legacy variables used in code */
+    --outgoing-msg-bg: var(--msg-sent-bg);
+    --outgoing-msg-text: var(--msg-sent-text);
+    --incoming-msg-bg: var(--msg-received-bg);
+    --chat-bg: var(--bg-primary);
+    /* Added missing var based on usage */
+    --font-family: 'Inter', sans-serif;
+    /* Added missing var */
+}
+
+body.dark-mode {
+    --bg-primary: #111827;
+    --bg-secondary: #1f2937;
+    --bg-tertiary: #334155;
+    --text-primary: #f9fafb;
+    --text-secondary: #9ca3af;
+    --text-muted: #64748b;
+
+    --border-color: #374151;
+
+    --msg-sent-bg: #3b82f6;
+    /* Slightly lighter blue for dark mode */
+    --msg-sent-text: #ffffff;
+    --msg-received-bg: #334155;
+    /* Slate-700 */
+    --msg-received-text: #f8fafc;
+
+    --accent-color: #60a5fa;
+
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.5);
+    /* Legacy overrides */
+    --bg-color: var(--bg-primary);
+    --sidebar-bg: var(--bg-secondary);
+
+    /* Legacy Mapping Dark Mode */
+    --outgoing-msg-bg: var(--msg-sent-bg);
+    --outgoing-msg-text: var(--msg-sent-text);
+    --incoming-msg-bg: var(--msg-received-bg);
+}
